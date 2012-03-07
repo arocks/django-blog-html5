@@ -1,0 +1,122 @@
+@import url(http://fonts.googleapis.com/css?family=Poly);
+@import url(normalize.css);
+
+html {
+    height: 100%;
+    font-size: 100%;
+    overflow-y: scroll; /* Force a scrollbar in non-IE */
+    -webkit-text-size-adjust: 100%; /* Prevent iOS text size adjust on orientation change without disabling user zoom */
+    -ms-text-size-adjust: 100%;
+
+    background: #f0f0f0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    background-image: linear-gradient(top, rgb(183,235,235) 10%, rgb(255,255,255) 50%);
+    background-image: -o-linear-gradient(top, rgb(183,235,235) 10%, rgb(255,255,255) 50%);
+    background-image: -moz-linear-gradient(top, rgb(183,235,235) 10%, rgb(255,255,255) 50%);
+    background-image: -webkit-linear-gradient(top, rgb(183,235,235) 10%, rgb(255,255,255) 50%);
+    background-image: -ms-linear-gradient(top, rgb(183,235,235) 10%, rgb(255,255,255) 50%);
+
+    background-image: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(0.1, rgb(183,235,235)),
+    color-stop(0.5, rgb(255,255,255))
+    );
+}
+
+body {
+    margin: 0 auto;
+    min-height: 100%;
+
+    max-width: 600px;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.5);
+    padding: 18px;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Poly', serif;
+    color: #FF7C06;
+}
+
+h1 a, h2 a {
+    text-decoration: none;
+    color: #FF7C06;
+}
+
+header h1 {
+    font-weight: 600;
+    letter-spacing: -3px;
+    font-size: 2.6em;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
+    /* Icon from http://www.gentleface.com/free_icon_set.html */
+    background: url(../img/logo.png) no-repeat;
+    padding: 0 0 0 64px;
+}
+
+nav {
+    width: 100%;
+    border-bottom: 1px dotted #aaa;
+    height: 24px;
+}
+nav a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 3px;
+    margin-right: 10px;
+}
+nav a:hover {
+    text-decoration: underline;
+}
+
+h2 a, h2 {
+    text-shadow: 0 1px 0 white;
+    letter-spacing: 1px;
+}
+
+.post_meta, .tags a {
+    color: #868686;
+}
+
+.post_body {
+    padding-bottom: 20px;
+    margin-bottom: 8px;
+}
+
+.tags {
+    padding: 0 0 0 21px;
+    /* Icon from http://www.gentleface.com/free_icon_set.html */
+    background: url(../img/tag_icon.png) no-repeat 0 .25em;
+}
+
+footer {
+    width: 100%;
+    height: 40px;
+    border-top: 1px dotted #AAA;
+    padding-top: 4px;
+    margin-top: 36px;
+    position: relative;
+}
+
+.poweredby a {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    text-indent: -9999px;
+    width: 80px;
+    height: 15px;
+    background: url(../img/django-powered.png) no-repeat top left;
+    margin-top: 6px;
+}
+.social {
+    color: #999;
+    font-size: 80%;
+}
+.social a {
+    color: #666;
+}

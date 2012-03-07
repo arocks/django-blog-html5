@@ -1,0 +1,45 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+<meta charset=utf-8>
+<title> My Blog </title>
+<link rel="stylesheet" type="text/css" href="/static/css/main.css" />
+<!--[if lt IE 9]>
+<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+</head>
+<body>
+
+<header><h1><a href="/blog" title="Homepage"> My Blog </a></h1></header> 
+<nav> 
+<a href="/blog/archives" class="archives"> Archives</a> 
+<a href="/blog/feed" class="rss"> Feed</a>
+{% if user.is_staff %}
+<a href="{% url admin:app_list app_label='blog'%}">Admin</a>
+{% endif %}
+</nav>
+<section>
+<article>
+
+
+<!-- blog post -->
+{% block content %}
+{% endblock %}
+</article> <!-- blog post ends -->
+
+</section>
+<footer>
+<div class="about">
+<strong>Joe Blogger</strong> - <em>Blogger, Visionary, Angry Birds champ</em>
+</div>
+<div class="social">
+<a href="#">Twitter</a> | 
+<a href="#">LinkedIn</a> | 
+<a href="#">Github</a> 
+</div>
+<div class="poweredby">
+<a href="https://www.djangoproject.com/">django powered</a>
+</div>
+</footer>
+</body>
+</html>
